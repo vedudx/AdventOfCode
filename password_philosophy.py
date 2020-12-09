@@ -2,6 +2,7 @@ file = open('day_2.txt', 'r')
 data = list(file.read().splitlines())
 
 count  = 0
+#part2
 for i in data:
     string = i.split()
     pos_1,pos_2 = map(int, string[0].split('-'))
@@ -11,7 +12,7 @@ for i in data:
     y = digit == test[pos_2-1]
     if x ^ y:
         count += 1
-#part1
+#part1 solution is below
 #for i in data:
     #string = i.split()
     #mini,maxi = map(int, string[0].split('-'))
