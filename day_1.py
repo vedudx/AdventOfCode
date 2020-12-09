@@ -11,6 +11,7 @@ def pair():
                     print(sums[i], sums[j], sums[k])
                     return sums[i]*sums[j]*sums[k]  
 
+#Alternative approach using itertools which will work for all the three paired combination
 def findPairs(lst, K): 
 
     return [pair for pair in combinations(lst, 3) if sum(pair) == K]
