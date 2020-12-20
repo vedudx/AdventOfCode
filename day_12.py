@@ -31,7 +31,6 @@ instruct = [[x[0], int(x[1:])] for x in data]
 dist = [0,0,0,0] # North, East, South, West
 way_point = [1,10,0,0]
 
-#some error in if way_point[0] and similar conditions
 def rotate(l, value,x ,y):
     if l == 'R':
         if value == 0:
